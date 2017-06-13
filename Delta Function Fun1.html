@@ -1,0 +1,371 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252">
+<title>Delta Function Fun1.html</title>
+<!-- Created by Maple 2015.0, Windows 7 -->
+</head>
+<a name="MapleAutoBookmark1" />
+
+<body bgcolor="FFFFFF">
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_1.gif" width="112" height="17" alt="with(inttrans); -1" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_2.gif" width="68" height="17" alt="Dirac(0)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_3.gif" width="68" height="17" alt="Dirac(0)" align="center" border="0"></td>
+<td width='5%' align='center'>(1)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_4.gif" width="220" height="17" alt="int(`*`(Dirac(`+`(t, `-`(2))), `*`(sin(t))), t = 0 .. 5)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_5.gif" width="52" height="17" alt="sin(2)" align="center" border="0"></td>
+<td width='5%' align='center'>(2)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_6.gif" width="177" height="17" alt="laplace(Dirac(`+`(t, `-`(4))), t, s)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_7.gif" width="36" height="21" alt="exp(`+`(`-`(`*`(4, `*`(s)))))" align="center" border="0"></td>
+<td width='5%' align='center'>(3)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_8.gif" width="346" height="36" alt="de := diff(x(t), t) = `+`(`/`(1, 2), `-`(`*`(`/`(1, 40), `*`(x(t)))), `*`(10, `*`(Dirac(`+`(t, `-`(100))))))" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_9.gif" width="342" height="36" alt="diff(x(t), t) = `+`(`/`(1, 2), `-`(`*`(`/`(1, 40), `*`(x(t)))), `*`(10, `*`(Dirac(`+`(t, `-`(100))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(4)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_10.gif" width="170" height="17" alt="lapde := laplace(de, t, s)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_11.gif" width="516" height="36" alt="`+`(`*`(s, `*`(laplace(x(t), t, s))), `-`(x(0))) = `+`(`/`(`*`(`/`(1, 2)), `*`(s)), `-`(`*`(`/`(1, 40), `*`(laplace(x(t), t, s)))), `*`(10, `*`(exp(`+`(`-`(`*`(100, `*`(s))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(5)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_12.gif" width="376" height="17" alt="lapde2 := subs(x(0) = 0, laplace(x(t), t, s) = X, lapde)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_13.gif" width="269" height="36" alt="`*`(s, `*`(X)) = `+`(`/`(`*`(`/`(1, 2)), `*`(s)), `-`(`*`(`/`(1, 40), `*`(X))), `*`(10, `*`(exp(`+`(`-`(`*`(100, `*`(s))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(6)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_14.gif" width="187" height="17" alt="Xsol := solve(lapde2, X)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_15.gif" width="200" height="40" alt="`+`(`/`(`*`(20, `*`(`+`(`*`(20, `*`(exp(`+`(`-`(`*`(100, `*`(s))))), `*`(s))), 1))), `*`(s, `*`(`+`(1, `*`(40, `*`(s)))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(7)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_16.gif" width="192" height="17" alt="xsol := invlaplace(Xsol, s, t)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_17.gif" width="384" height="36" alt="`+`(20, `-`(`*`(20, `*`(exp(`+`(`-`(`*`(`/`(1, 40), `*`(t)))))))), `*`(10, `*`(Heaviside(`+`(t, `-`(100))), `*`(exp(`+`(`-`(`*`(`/`(1, 40), `*`(t))), `/`(5, 2)))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(8)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_18.gif" width="235" height="17" alt="plot(xsol, t = 0 .. 500, discont = true)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#000000" size="3" face="Times New Roman"><img src="images/Delta Function Fun_19.gif" width="400" height="400" alt="Plot_2d" align="center" border="0"></td>
+<td width='5%' align='center'></td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_20.gif" width="339" height="36" alt="de := diff(x(t), t) = `+`(`/`(1, 2), `-`(`*`(`/`(1, 50), `*`(x(t)))), `*`(5, `*`(Dirac(`+`(t, `-`(20))))))" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_21.gif" width="326" height="36" alt="diff(x(t), t) = `+`(`/`(1, 2), `-`(`*`(`/`(1, 50), `*`(x(t)))), `*`(5, `*`(Dirac(`+`(t, `-`(20))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(9)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_22.gif" width="170" height="17" alt="lapde := laplace(de, t, s)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_23.gif" width="503" height="36" alt="`+`(`*`(s, `*`(laplace(x(t), t, s))), `-`(x(0))) = `+`(`/`(`*`(`/`(1, 2)), `*`(s)), `-`(`*`(`/`(1, 50), `*`(laplace(x(t), t, s)))), `*`(5, `*`(exp(`+`(`-`(`*`(20, `*`(s))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(10)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_24.gif" width="360" height="17" alt="lapde2 := subs(laplace(x(t), t, s) = X, x(0) = 0, lapde)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_25.gif" width="256" height="36" alt="`*`(s, `*`(X)) = `+`(`/`(`*`(`/`(1, 2)), `*`(s)), `-`(`*`(`/`(1, 50), `*`(X))), `*`(5, `*`(exp(`+`(`-`(`*`(20, `*`(s))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(11)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_26.gif" width="170" height="17" alt="Xsol := solve(lapde2, X)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_27.gif" width="195" height="40" alt="`+`(`/`(`*`(25, `*`(`+`(`*`(10, `*`(exp(`+`(`-`(`*`(20, `*`(s))))), `*`(s))), 1))), `*`(s, `*`(`+`(1, `*`(50, `*`(s)))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(12)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_28.gif" width="192" height="17" alt="xsol := invlaplace(Xsol, s, t)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_29.gif" width="368" height="36" alt="`+`(`*`(5, `*`(Heaviside(`+`(t, `-`(20))), `*`(exp(`+`(`-`(`*`(`/`(1, 50), `*`(t))), `/`(2, 5)))))), 25, `-`(`*`(25, `*`(exp(`+`(`-`(`*`(`/`(1, 50), `*`(t)))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(13)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_30.gif" width="235" height="17" alt="plot(xsol, t = 0 .. 500, discont = true)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#000000" size="3" face="Times New Roman"><img src="images/Delta Function Fun_31.gif" width="400" height="400" alt="Plot_2d" align="center" border="0"></td>
+<td width='5%' align='center'></td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_32.gif" width="624" height="17" alt="de := diff(p(t), t) = `+`(`*`(0.5e-1, `*`(p(t))), `*`(1000, `*`(Dirac(`+`(t, `-`(1))))), `*`(1000, `*`(Dirac(`+`(t, `-`(3))))), `*`(1000, `*`(Dirac(`+`(t, `-`(4))))))" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_33.gif" width="578" height="36" alt="diff(p(t), t) = `+`(`*`(0.5e-1, `*`(p(t))), `*`(1000, `*`(Dirac(`+`(t, `-`(1))))), `*`(1000, `*`(Dirac(`+`(t, `-`(3))))), `*`(1000, `*`(Dirac(`+`(t, `-`(4))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(14)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_34.gif" width="170" height="17" alt="lapde := laplace(de, t, s)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_35.gif" width="748" height="21" alt="`+`(`*`(s, `*`(laplace(p(t), t, s))), `-`(`*`(1., `*`(p(0))))) = `+`(`*`(0.5000000000e-1, `*`(laplace(p(t), t, s))), `*`(1000., `*`(exp(`+`(`-`(`*`(1., `*`(s))))))), `*`(1000., `*`(exp(`+`(`-`(`*`(3.,..." align="center" border="0"></td>
+<td width='5%' align='center'>(15)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_36.gif" width="387" height="17" alt="lapde2 := subs(laplace(p(t), t, s) = P, p(0) = 1000, lapde)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_37.gif" width="533" height="21" alt="`+`(`*`(s, `*`(P)), `-`(1000.)) = `+`(`*`(0.5000000000e-1, `*`(P)), `*`(1000., `*`(exp(`+`(`-`(`*`(1., `*`(s))))))), `*`(1000., `*`(exp(`+`(`-`(`*`(3., `*`(s))))))), `*`(1000., `*`(exp(`+`(`-`(`*`(4.,..." align="center" border="0"></td>
+<td width='5%' align='center'>(16)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_38.gif" width="169" height="17" alt="Psol := solve(lapde2, P)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_39.gif" width="290" height="40" alt="`+`(`/`(`*`(20000., `*`(`+`(exp(`+`(`-`(`*`(1., `*`(s))))), exp(`+`(`-`(`*`(3., `*`(s))))), exp(`+`(`-`(`*`(4., `*`(s))))), 1.))), `*`(`+`(`-`(1.), `*`(20., `*`(s))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(17)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_40.gif" width="195" height="17" alt="p := proc (t) options operator, arrow; invlaplace(Psol, s, t) end proc" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_41.gif" width="768" height="16" alt="`+`(`*`(1000., `*`(exp(`+`(`*`(0.5000000000e-1, `*`(t)))))), `*`(1000., `*`(exp(`+`(`*`(0.5000000000e-1, `*`(t)), `-`(.1500000000))), `*`(`+`(`-`(`*`(1., `*`(Heaviside(`+`(`-`(t), 3.000000000))))), 1...." align="center" border="0"><br><img src="images/Delta Function Fun_42.gif" width="768" height="16" alt="`+`(`*`(1000., `*`(exp(`+`(`*`(0.5000000000e-1, `*`(t)))))), `*`(1000., `*`(exp(`+`(`*`(0.5000000000e-1, `*`(t)), `-`(.1500000000))), `*`(`+`(`-`(`*`(1., `*`(Heaviside(`+`(`-`(t), 3.000000000))))), 1...." align="center" border="0"></td>
+<td width='5%' align='center'>(18)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_43.gif" width="152" height="17" alt="plot(psol, t = -10 .. 10)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#000000" size="3" face="Times New Roman"><img src="images/Delta Function Fun_44.gif" width="400" height="400" alt="Plot_2d" align="center" border="0"></td>
+<td width='5%' align='center'></td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_45.gif" width="49" height="17" alt="p(10)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_46.gif" width="92" height="17" alt="5985.959813" align="center" border="0"></td>
+<td width='5%' align='center'>(19)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_47.gif" width="361" height="17" alt="de := diff(y(t), `$`(t, 2)) = `+`(`*`(a, `*`(Dirac(t))), `-`(9.8), `-`(diff(y(t), t)))" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_48.gif" width="315" height="44" alt="diff(diff(y(t), t), t) = `+`(`*`(a, `*`(Dirac(t))), `-`(9.8), `-`(diff(y(t), t)))" align="center" border="0"></td>
+<td width='5%' align='center'>(20)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_49.gif" width="170" height="17" alt="lapde := laplace(de, t, s)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_50.gif" width="697" height="36" alt="`+`(`*`(`^`(s, 2), `*`(laplace(y(t), t, s))), `-`(`*`(1., `*`((D(y))(0)))), `-`(`*`(1., `*`(s, `*`(y(0)))))) = `+`(a, `-`(`/`(`*`(9.800000000), `*`(s))), `-`(`*`(1., `*`(s, `*`(laplace(y(t), t, s)))))..." align="center" border="0"></td>
+<td width='5%' align='center'>(21)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_51.gif" width="446" height="17" alt="lapde2 := subs(laplace(y(t), t, s) = Y, (D(y))(0) = 0, y(0) = 0, lapde)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_52.gif" width="282" height="36" alt="`*`(`^`(s, 2), `*`(Y)) = `+`(a, `-`(`/`(`*`(9.800000000), `*`(s))), `-`(`*`(1., `*`(s, `*`(Y)))))" align="center" border="0"></td>
+<td width='5%' align='center'>(22)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_53.gif" width="168" height="17" alt="Ysol := solve(lapde2, Y)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_54.gif" width="248" height="40" alt="`+`(`/`(`*`(.2000000000, `*`(`+`(`*`(5., `*`(a, `*`(s))), `-`(49.)))), `*`(`^`(s, 2), `*`(`+`(s, 1.)))))" align="center" border="0"></td>
+<td width='5%' align='center'>(23)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_55.gif" width="191" height="17" alt="ysol := invlaplace(Ysol, s, t)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_56.gif" width="497" height="21" alt="`+`(9.800000000, `-`(`*`(9.800000000, `*`(t))), a, `-`(`*`(.2000000000, `*`(exp(`+`(`-`(`*`(1., `*`(t))))), `*`(`+`(`*`(5., `*`(a)), 49.))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(24)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_57.gif" width="202" height="17" alt="thing := subs(a = 21.33, ysol)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#0000ff" size="3" face="Times New Roman"><img src="images/Delta Function Fun_58.gif" width="386" height="21" alt="`+`(31.13000000, `-`(`*`(9.800000000, `*`(t))), `-`(`*`(31.13000000, `*`(exp(`+`(`-`(`*`(1., `*`(t)))))))))" align="center" border="0"></td>
+<td width='5%' align='center'>(25)</td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"><img src="images/Delta Function Fun_59.gif" width="146" height="17" alt="plot(thing, t = 0 .. 3.5)" align="center" border="0"></td>
+</tr>
+</table>&nbsp;</p>
+<p align="center"><table width='100%'>
+<tr>
+<td valign="top" align="center"><font color="#000000" size="3" face="Times New Roman"><img src="images/Delta Function Fun_60.gif" width="400" height="400" alt="Plot_2d" align="center" border="0"></td>
+<td width='5%' align='center'></td>
+</tr>
+</table></font>&nbsp;</p>
+<p align="left"><table>
+<tr>
+<td valign="top" align="center"><font color="#78000e" size="3" face="Courier New"><strong>&gt; </strong></font></td>
+<td valign="top"></td>
+</tr>
+</table>&nbsp;</p>
+</body>
+</html>

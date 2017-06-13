@@ -31,10 +31,10 @@
                 <div class="col-sm-12 overflow">
                    <div class="social-icons pull-right">
                         <ul class="nav nav-pills">
-                            <li><a href="https://www.facebook.com/abbi.wynn" target="blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/4_the_wynn" target="blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/4_the_wynn/" target="blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/abigale-wynn-21047a133" target="blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div> 
                 </div>
@@ -50,17 +50,17 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!--a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.html">
                     	<h1><img src="images/logo.png" alt="logo"></h1>
-                    </a-->
+                    </a>
                     
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <!--li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu"-->
-                                <!--li><a href="aboutus.html">About</a></li>
+                        <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="aboutus.html">About</a></li>
                                 <li><a href="aboutus2.html">About 2</a></li>
                                 <li><a href="service.html">Services</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
@@ -90,7 +90,7 @@
                                 <li><a href="portfolio-details.html">Portfolio Details</a></li>
                             </ul>
                         </li>                         
-                        <li><a href="shortcodes.html ">Shortcodes</a></li-->                    
+                        <li><a href="shortcodes.html ">Shortcodes</a></li>                    
                     </ul>
                 </div>
                 <div class="search">
@@ -111,10 +111,9 @@
             <div class="row">
                 <div class="main-slider">
                     <div class="slide-text">
-                        <h1>ABIGALE WYNN</h1>
-                        <h2>Bringing data to life</h2>
+                        <h1>Bringing data to life</h1>
                         <p> Striving to bring a creative passion for information and improvement. Please enjoy some of my past projects and I hope you will share in my future curiosities! </p>
-                        <!--a href="#" class="btn btn-common">Learn More</a-->
+                        <a href="#" class="btn btn-common">SIGN UP</a>
                     </div>
                     <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
                     <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
@@ -134,92 +133,36 @@
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/coming-soon1.png" alt="">
+                            <img src="images/home/icon1.png" alt="">
                         </div>
                         <h2>Trained in Data</h2>
-                        <p>Undergraduate education in mathematics and actuarial science from Butler University. Familiar with Latex, MapleSoft, Excel, and R tools. Education includes mathematics, statistics, economics, and accounting all under a liberal arts umbrella.</p>
+                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/coming-soon2.png" alt="">
+                            <img src="images/home/icon2.png" alt="">
                         </div>
-                        <h2>Dedicated to Applications</h2>
-                        <p>Previous work on projects related to political structures, market analysis, statistical research, and data collection in feilds such as economic development.</p>
+                        <h2>Superior Typography</h2>
+                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/coming-soon3.png" alt="">
+                            <img src="images/home/icon3.png" alt="">
                         </div>
-                        <h2>Inspired by Creativity</h2>
-                        <p>Creative work including volunteer work with Art with a HEART, Indianapolis and work with the Beautiful Minds Project at Butler University. These passions are what inspire much of my data work.</p>
+                        <h2>Swift Page Builder</h2>
+                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
-
-        <section id="education">
-        <div class="containter">
-            <div class=row>
-                <div class="col-md-12 text-center col-sm-12">
-                    <div class="education wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                    <h1 class="title">Education</h1>
-                    <br>
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Mathematics & Actuarial Science</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>Expected Graduation 2019</p>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Grade Point Average</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>3.82/4</p> 
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Eleven Fifty Academy</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>Gold Badge Certification</p>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Lanthier Winery</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>Intern May 2016-Present</p>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Butler ADVANCE</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>Intern March 2017-Present</p>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-3">
-                            <p><b>Delta Delta Delta</b></p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3">
-                            <p>Member</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
     <!--/#services-->
 
-    <!--section id="action" class="responsive">
+    <section id="action" class="responsive">
         <div class="vertical-center">
              <div class="container">
                 <div class="row">
@@ -237,7 +180,7 @@
                 </div>
             </div>
         </div>
-   </section-->
+   </section>
     <!--/#action-->
 
     <section id="features">
@@ -245,36 +188,31 @@
             <div class="row">
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <a href="DeltaFunction.html" target="blank"><img src="images/Delta Function Fun_44.gif" style="height:20%; width:70%; padding-left:20%" class="img-responsive" alt=""></a>
+                        <img src="images/home/image1.png" class="img-responsive" alt="">
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Responsive Rate Analysis</h2>
-                        <P>I am able to look at change and functions in new and creative ways to solve problems of rates and changes. Click the image to see an example of the some function manipulation and graph analysis that I have done before!</P>
+                        <h2>Experienced and Enthusiastic</h2>
+                        <P>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</P>
                     </div>
                 </div>
-                <hr>
-
-                <div class="single-features" style="padding-bottom:10%">
+                <div class="single-features">
                     <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>LaTEX, proofwriting, and Logic</h2>
-                        <P>Throughout my formal education I have learned how to apply the laws of logic. This makes my writing consise. I also am familar with LaTEX formatting and can apply that to creating mathematical and scientific documents and presentations. Click the image of a proof part to the see some full proof examples.</P>
+                        <h2>Built for the Responsive Web</h2>
+                        <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
                     </div>
                     <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <a href="full latex for website.pdf" target="blank"><img src="images/proof.jpg" style="padding-left:100px; padding-top:10%" class="img-responsive" alt=""></a>
+                        <img src="images/home/image2.png" class="img-responsive" alt="">
                     </div>
                 </div>
-                <hr>
-
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <a href="StatisticsProjectTwo for Portfolio.pdf" target="blank"><img src="images/piechart.png" style="padding-left:30%"class="img-responsive" alt=""></a>
+                        <img src="images/home/image3.png" class="img-responsive" alt="">
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Statistical Anaylsis</h2>
-                        <P>Not only do I have experience working and analyzing data statistically, I also have experience working on teams to solve problems. With this experience also comes experience asking difficult questions for research purposes. Click the graph to see an example of a statistical report written by me and a team.</P>
+                        <h2>Experienced and Enthusiastic</h2>
+                        <P>Ut officia cupidatat anim excepteur fugiat cillum ea occaecat rump pork chop tempor. Ut tenderloin veniam commodo. Shankle aliquip short ribs, chicken eiusmod exercitation shank landjaeger spare ribs corned beef.</P>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
     </section>
@@ -286,27 +224,27 @@
                 <div class="col-sm-12">
                     <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                         <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Economic Development Project Example</h1>
-                        <p>During my Summer 2017 Internship with Lanthier Winery I ran an Economic Development Project from start to finish that forced me to practice skills like budgeting, management, communication skills, and economic principle application </p>
+                        <h1 class="title">Happy Clients</h1>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
                     </div>
                     <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">Project Proposal</button></a>
+                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
                         </div>
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">Budget</button></a>
+                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">Job Descripton</button></a>
+                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">Failure Response</button></a>
+                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">New Project</button></a>
+                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><button class="btn btn-default">Final Project</button></a>
+                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -321,50 +259,48 @@
                 <div class="col-sm-12 text-center bottom-separator">
                     <img src="images/home/under.png" class="img-responsive inline" alt="">
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-sm-6">
                     <div class="testimonial bottom">
-                    <div class="col-md-4 col-sm-6 col-xs-12"></div>
-                        <!--h2>Testimonial</h2-->
-                        <img class="col-md-8 col-sm-12 col-xs-12 bottom" src="images/profilepic.png" style="height:80%; width:60%; ">
+                        <h2>Testimonial</h2>
                         <div class="media">
                             <div class="pull-left">
-                                <!--a href="#"><img src="images/home/profile1.png" alt=""></a-->
+                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
                             </div>
                             <div class="media-body">
-                                <!--blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote-->
-                                <!--h3><a href="#">- Jhon Kalis</a></h3-->
+                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
+                                <h3><a href="#">- Jhon Kalis</a></h3>
                             </div>
                          </div>
                         <div class="media">
                             <div class="pull-left">
-                                <!--a href="#"><img src="images/home/profile2.png" alt=""></a-->
+                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
                             </div>
                             <div class="media-body">
-                                <!--blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                <h3><a href="">- Abraham Josef</a></h3-->
+                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+                                <h3><a href="">- Abraham Josef</a></h3>
                             </div>
                         </div>   
                     </div> 
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xs-12">
+                <div class="col-md-3 col-sm-6">
                     <div class="contact-info bottom">
                         <h2>Contacts</h2>
                         <address>
-                        E-mail: <a href="mailto:wynnabigale@gmail.com">wynnabigale@gmail.com</a> <br> 
-                        Phone: +1 (812) 493 3718 <br> 
-                        <!--Fax: +1 (123) 456 7891 <br>-->
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        Phone: +1 (123) 456 7890 <br> 
+                        Fax: +1 (123) 456 7891 <br> 
                         </address>
 
                         <h2>Address</h2>
                         <address>
-                        Abigale Wynn<br> 
-                        326 Hillcrest Dr <br> 
-                        Madison, In <br> 
-                        United States <br> 
+                        Unit C2, St.Vincent's Trading Est., <br> 
+                        Feeder Road, <br> 
+                        Bristol, BS2 0UY <br> 
+                        United Kingdom <br> 
                         </address>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="col-md-4 col-sm-12">
                     <div class="contact-form bottom">
                         <h2>Send a message</h2>
                         <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
@@ -383,7 +319,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xs-12">
+                <div class="col-sm-12">
                     <div class="copyright-text text-center">
                         <p>&copy; Your Company 2014. All Rights Reserved.</p>
                         <p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>

@@ -233,8 +233,8 @@
   color:#2AA7DC;
 }
 
-.social-icons ul li a:hover .fa-google-plus {
-  color:#A22523;
+.social-icons ul li a:hover .fa-instagram {
+  color: #0884d5;
 }
 
 .social-icons ul li a:hover .fa-dribbble {
@@ -2722,4 +2722,10 @@ span.stButton_gradient,
   -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
   border-radius: 100%;
   margin: 10px 0;
+}
+
+.btn-default{
+  height:50px;
+  width:130px;
+  background-color:#ff944d;
 }
