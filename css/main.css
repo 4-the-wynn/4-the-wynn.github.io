@@ -51,6 +51,7 @@
 
   ul {
     list-style: none;
+    padding: none;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -183,7 +184,7 @@
 }
 
 .search i{
-  color: #00aeef;
+  color: #d3d3d3;
   cursor: pointer;
   position: absolute;
   right: 10px;
